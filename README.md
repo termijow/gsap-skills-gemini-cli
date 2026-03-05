@@ -33,6 +33,8 @@ Agents use each skill when the task matches the skillâ€™s `description` (e.g. â€
 | **gsap-core** | Core API: `gsap.to()` / `from()` / `fromTo()`, easing, duration, stagger, defaults |
 | **gsap-timeline** | Timelines: sequencing, position parameter, labels, nesting, playback |
 | **gsap-scrolltrigger** | ScrollTrigger: scroll-linked animations, pinning, scrub, triggers, refresh & cleanup |
+| **gsap-plugins** | Plugins: ScrollToPlugin, ScrollSmoother, Flip, Draggable, Inertia, Observer, SplitText, ScrambleText, SVG & physics plugins, CustomEase, EasePack, GSDevTools, etc. |
+| **gsap-utils** | gsap.utils: clamp, mapRange, normalize, interpolate, random, snap, toArray, selector, wrap, pipe, and other helpers |
 | **gsap-react** | React: useGSAP hook, refs, `gsap.context()`, cleanup, SSR |
 | **gsap-performance** | Performance: transforms over layout props, will-change, batching, ScrollTrigger tips |
 
@@ -46,6 +48,8 @@ gsap-skills/
     gsap-core/       SKILL.md
     gsap-timeline/   SKILL.md
     gsap-scrolltrigger/ SKILL.md
+    gsap-plugins/    SKILL.md
+    gsap-utils/      SKILL.md
     gsap-react/      SKILL.md
     gsap-performance/  SKILL.md
 ```
