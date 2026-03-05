@@ -1,0 +1,24 @@
+{
+  "name": "gsap-skills",
+  "version": "1.0.0",
+  "description": "AI skills for GSAP — core animations, timelines, ScrollTrigger, plugins, utilities, React integration, and performance best practices",
+  "author": {
+    "name": "GreenSock",
+    "email": "info@greensock.com",
+    "url": "https://gsap.com"
+  },
+  "license": "MIT",
+  "keywords": [
+    "gsap",
+    "greensock",
+    "animation",
+    "scrolltrigger",
+    "timeline",
+    "react",
+    "performance",
+    "tweens",
+    "plugins"
+  ],
+  "logo": "assets/gsap-white.svg",
+  "skills": ["skills"]
+}

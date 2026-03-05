@@ -4,27 +4,41 @@ Official AI skills for GSAP. These skills teach AI coding agents how to correctl
 
 Skills follow the [Agent Skills](https://agentskills.io) format and work with the [skills](https://github.com/vercel-labs/skills) CLI (Cursor, Claude Code, Codex, Windsurf, GitHub Copilot, and others).
 
-## Installation
+## Installing
 
-Install all GSAP skills with the skills CLI:
+These skills work with any agent that supports the Agent Skills standard, including Claude Code, Cursor, and others.
 
-```bash
-npx skills add <owner>/gsap-skills
+### Claude Code
+
+Install using the [plugin marketplace](https://docs.anthropic.com/en/docs/agents-and-tools/claude-code/plugins#add-from-marketplace):
+
+```
+/plugin marketplace add greensock/gsap-skills
 ```
 
-Replace `<owner>` with the GitHub org or username (e.g. `greensock/gsap-skills`). To list skills without installing:
+### Cursor
 
-```bash
-npx skills add <owner>/gsap-skills --list
+Install from the Cursor Marketplace or add manually via **Settings > Rules > Add Rule > Remote Rule (Github)** with `greensock/gsap-skills`.
+
+### npx skills
+
+Install using the [`npx skills`](https://skills.sh) CLI:
+
+```
+npx skills add https://github.com/greensock/gsap-skills
 ```
 
-To install a single skill by name:
+### Clone / Copy
 
-```bash
-npx skills add <owner>/gsap-skills --skill gsap-core
-```
+Clone this repo and copy the skill folders into the appropriate directory for your agent:
 
-Agents use each skill when the task matches the skill’s `description` (e.g. “scroll animation” → gsap-scrolltrigger).
+| Agent | Skill Directory | Docs |
+|-------|-----------------|------|
+| Claude Code | `~/.claude/skills/` | [docs](https://docs.anthropic.com/en/docs/agents-and-tools/claude-code/skills) |
+| Cursor | `~/.cursor/skills/` | [docs](https://docs.cursor.com/context/rules) |
+| OpenCode | `~/.config/opencode/skills/` | [docs](https://opencode.ai/docs/skills/) |
+| OpenAI Codex | `~/.codex/skills/` | [docs](https://developers.openai.com/codex/skills/) |
+| Pi | `~/.pi/agent/skills/` | [docs](https://github.com/badlogic/pi-mono/tree/main/packages/coding-agent#skills) |
 
 ## Skills
 
@@ -58,3 +72,7 @@ gsap-skills/
 
 - **[skills CLI](https://github.com/vercel-labs/skills)** — installs into Cursor, Claude Code, Codex, Windsurf, GitHub Copilot, and [40+ agents](https://github.com/vercel-labs/skills#supported-agents)
 - **[Agent Skills spec](https://agentskills.io/specification.md)** — SKILL.md format and discovery
+
+## License
+
+MIT

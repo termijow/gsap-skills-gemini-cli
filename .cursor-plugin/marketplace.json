@@ -1,0 +1,13 @@
+{
+  "name": "gsap-skills",
+  "owner": {
+    "name": "GreenSock"
+  },
+  "plugins": [
+    {
+      "name": "gsap-skills",
+      "source": "./",
+      "description": "AI skills for GSAP — core animations, timelines, ScrollTrigger, plugins, utilities, React integration, and performance best practices."
+    }
+  ]
+}
