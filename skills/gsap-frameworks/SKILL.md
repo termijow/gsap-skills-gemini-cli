@@ -89,14 +89,14 @@ onUnmounted(() => {
 </template>
 ```
 
-## Nuxt 3
+## Nuxt 4
 
 > See `examples/nuxt/` for a runnable Nuxt 4 project with plugin registration, lazy loading, and SSR-safe patterns.
 
-Use a **client-only composable** (`.client.ts` suffix) to register GSAP Plugins, it never runs on the server:
+Use a **reusable composable** to register GSAP Plugins and also to lazy load Plugins that are not extensively used in your application:
 
 ```typescript
-// composables/useGSAP.client.ts
+// composables/useGSAP.ts
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
@@ -193,12 +193,9 @@ export default function () {
 Access in components via `useGSAP()`:
 
 ```javascript
-import useGSAP from "./composables/useGSAP.client";
-
 const { gsap, ScrollTrigger, lazyLoadPlugin } = useGSAP();
 ```
 
-- ✅ **`.client.ts` suffix** ensures the composable only runs in the browser (SSR-safe). Never import GSAP in server-rendered code.
 - ✅ **`useGSAP()`** provides typed access to the gsap instance and lazy load method.
 - ✅ **Lazy-load any plugin** (SplitText, MorphSVG, etc.) that is not widely used in your app to reduce initial bundle size.
 - ✅ Use **gsap.context(scope)** and **onUnmounted → ctx.revert()** in components, same as Vue 3.

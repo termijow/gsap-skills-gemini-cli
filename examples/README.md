@@ -24,6 +24,6 @@ These examples are intended as reference implementations for AI agents and for q
 
 ## Nuxt
 
-- **examples/nuxt/** — Nuxt 4 with GSAP client-only re-usable composable.
+- **examples/nuxt/** — Nuxt 4 with GSAP re-usable composable.
 - From repo root: `cd examples/nuxt && npm install && npm run dev`.
-- Patterns: GSAP as client-only composable (`useGSAP.client.ts`), for gsap access, lazy-loading plugins, `gsap.context(() => {}, scope)` cleanup.
+- Patterns: GSAP as reusable composable (`useGSAP.ts`), for gsap access, lazy-loading plugins, `gsap.context(() => {}, scope)` cleanup.
