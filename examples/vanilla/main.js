@@ -2,8 +2,8 @@
  * Minimal GSAP vanilla example — follows skills: transforms, autoAlpha, timeline, ScrollTrigger.
  * Run from repo root: npx serve examples/vanilla (or open index.html with a local server that supports ES modules).
  */
-import { gsap } from "https://cdn.jsdelivr.net/npm/gsap@3.14.2/index.js";
-import { ScrollTrigger } from "https://cdn.jsdelivr.net/npm/gsap@3.14.2/ScrollTrigger.js";
+import { gsap } from "https://cdn.jsdelivr.net/npm/gsap@3.15.0/index.js";
+import { ScrollTrigger } from "https://cdn.jsdelivr.net/npm/gsap@3.15.0/ScrollTrigger.js";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -31,6 +31,6 @@ const tl2 = gsap.timeline({
   }
 });
 tl2.to(".panel", { x: 100 })
-   .to(".panel", { rotation: 5, duration: 0.7 });
+  .to(".panel", { rotation: 5, duration: 0.7 });
 
 // After dynamic layout changes you would call: ScrollTrigger.refresh();
